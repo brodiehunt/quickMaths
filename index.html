@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rufus Maths</title>
+  <script src="script.js" defer></script>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Quick Maths for Rufus</h1>
+  <nav>
+    <ul class="nav-links">
+      <li class="nav-link active" onclick="openTab(event, 'addition')">Addition</li>
+      <li class="nav-link" onclick="openTab(event, 'subtraction')">Subtraction</li>
+      <li class="nav-link" onclick="openTab(event, 'multiplication')">multiplication</li>
+      <li class="nav-link" onclick="openTab(event, 'division')">division</li>
+    </ul>
+  </nav>
+  <div class="addition-container section-container" id="addition">
+    <h2 class="section-title">Additon</h2>
+    <button class="get-question btn" onclick="getAddition(event)">Get question</button>
+    <p class="question-container-add"></p>
+    <p class="answer-container-add"></p>
+    <button class="reveal-answer-add reveal-btn btn">Reveal answer</button>
+  </div>
+  <div class="subtraction-container section-container" id="subtraction">
+    <h2 class="section-title">Subtraction</h2>
+    <button class="get-question btn" onclick="getSubtraction()">Get question</button>
+    <p class="question-container-sub"></p>
+    <p class="answer-container-sub"></p>
+    <button class="reveal-answer-sub reveal-btn btn">Reveal answer</button>
+  </div>
+  <div class="multiplication-container section-container" id="multiplication">
+    <h2 class="section-title">Multiplication</h2>
+    <button class="get-question btn" onclick="getMultiplication()">Get question</button>
+    <p class="question-container-mult"></p>
+    <p class="answer-container-mult"></p>
+    <button class="reveal-answer-mult reveal-btn btn">Reveal answer</button>
+  </div>
+  <div class="division-container section-container" id="division">
+    <h2 class="section-title">Division</h2>
+    <button class="get-question btn">Get question</button>
+    <p class="question-container-div"></p>
+    <p class="answer-container-div"></p>
+    <button class="reveal-answer-div reveal-btn btn">Reveal answer</button>
+  </div>
+</body>
+</html>
